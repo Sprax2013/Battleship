@@ -55,7 +55,7 @@ public class Main {
 
 						int x, y;
 						if (!digit.isEmpty() && (y = Integer.parseInt(digit) - 1) < GRID_SIZE && letter.length() == 1
-								&& (x = ALPHABET.indexOf(letter)) >= 0) {
+								&& (x = ALPHABET.indexOf(letter.toUpperCase())) >= 0) {
 							point = new Point(x, y);
 						} else {
 							System.out.println("Die Koordinaten sind ungültig!");
