@@ -63,8 +63,7 @@ public class ConsoleUtils {
 	}
 
 	public static void forceConsoleWindow() {
-		if (System.console() == null
-				&& !new File(".").getAbsolutePath().startsWith("C:\\Users\\Christian\\EclipseWorkspace\\")) {
+		if (System.console() == null && !new File(".").getAbsolutePath().toLowerCase().contains("eclipse")) {
 			JOptionPane.showMessageDialog(null, "Dieses Spiel muss über die System-Konsole gestartet werden!",
 					"Keine Konsole", JOptionPane.ERROR_MESSAGE);
 			System.exit(-1);
