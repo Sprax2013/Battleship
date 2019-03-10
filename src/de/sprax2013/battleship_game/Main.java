@@ -30,6 +30,7 @@ public class Main {
 
 			last = next;
 
+			ConsoleUtils.clearConsole();
 			printGrid(next);
 
 			boolean nextDidShoot = false;
